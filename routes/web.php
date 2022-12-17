@@ -27,6 +27,9 @@ Route::get('/', function () {
 Route::resource('reports', \App\Http\Controllers\ReportController::class)->names('reports');
 Route::resource('comments', \App\Http\Controllers\CommentController::class)->names('comments');
 
+
+Route::resource('lessons', \App\Http\Controllers\LessonController::class)->names('lessons');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
