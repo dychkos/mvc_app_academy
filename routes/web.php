@@ -18,7 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('products', \App\Http\Controllers\ProductController::class)->names('products');
+//
+//
+//Route::resource('products', \App\Http\Controllers\ProductController::class)->names('products');
+
+
+
+Route::resource('reports', \App\Http\Controllers\ReportController::class)->names('reports');
+Route::resource('comments', \App\Http\Controllers\CommentController::class)->names('comments');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
