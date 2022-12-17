@@ -24,7 +24,7 @@ class StoreCommentRequest extends FormRequest
     public function rules()
     {
         return [
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
+            'image' => 'required|image|mimes:png',
             'body' => 'required|string',
             'report_id' => 'required'
         ];

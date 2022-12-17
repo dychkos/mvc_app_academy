@@ -50,6 +50,16 @@
                     </button>
                 </div>
             </form>
+            <div class="mt-4">
+                @error('title')
+                    <p class="text-sm text-red-600">{{$message}}</p>
+                @enderror
+
+                @error('body')
+                    <p class="text-sm text-red-600">{{$message}}</p>
+                @enderror
+            </div>
         </div>
     </div>
 </x-guest-layout>
+

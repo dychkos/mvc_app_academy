@@ -10,6 +10,9 @@
             <p>
                 <b>Опис: </b><span class="mt-2 text-gray-600">{{$report->body}}</span>
             </p>
+            <p>
+                <b>Створено: </b><span class="mt-2 text-gray-600">{{$report->created_at->diffForHumans()}}</span>
+            </p>
         </div>
         <div class="mt-4">
             <h2>Comments</h2>

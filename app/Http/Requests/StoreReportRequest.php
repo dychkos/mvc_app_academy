@@ -24,8 +24,8 @@ class StoreReportRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required',
-            'body' => 'required',
+            'title' => 'required|string|min:1|max:150',
+            'body' => 'required|string|min:1|max:1700',
         ];
     }
 }
